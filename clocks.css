@@ -1,0 +1,16 @@
+body {
+    padding-top: 1.5em;
+    padding-right: 1.5em;
+    color: #0000ff;
+    background-color: #9de048;
+}
+#clocks > * {
+    font-size: 2rem;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: right;
+}
+#controls > * {
+    font-size: 1.75rem;
+    font-family: sans-serif;
+}

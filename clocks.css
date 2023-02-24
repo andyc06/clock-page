@@ -12,5 +12,5 @@ body {
 }
 #controls > * {
     font-size: 1rem;
-    font-family: sans-serif;
+    font-family: monospace;
 }

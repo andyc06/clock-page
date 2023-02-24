@@ -1,5 +1,5 @@
 // String that separates the timezone, date, and time
-const separator = "*";
+const separator = "▒";
 
 // container for all clocks
 const clocks = document.getElementById("clocks");
@@ -53,9 +53,11 @@ function timeDateFormatter(tzdbString, seconds, separator) {
     let day = dateParts[0];
     let month = dateParts[1];
     let year = dateParts[2];
+
+    //tzdbSplit = tzdbString.split("/"); // Split halves of IANA timezone
     
     // Recombine in the desired order
-    let formatted = `${tzdbString} ${separator} ${year}-${month}-${day} ${separator} ${timeStr}`
+    let formatted = `${tzdbString} ${separator} ${year}-${month}-${day} ${separator} ${timeStr}`;
     
     return formatted;
 
@@ -79,7 +81,7 @@ window.onload = function() {
     secondsCheckbox.checked = seconds;
 
     updateClocks();
-}
+};
 
 secondsCheckbox.addEventListener("change", function() {
     if (this.checked) {
@@ -89,4 +91,4 @@ secondsCheckbox.addEventListener("change", function() {
         seconds = false;
         updateClocks();
     }
-})
+});

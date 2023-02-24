@@ -14,6 +14,7 @@ const clock6 = document.getElementById("clock6");
 
 // Dynamic seconds display control
 const secondsCheckbox = document.querySelector("input[name=seconds]");
+
 // Set the default 'Show seconds' value
 let seconds = false;
 
